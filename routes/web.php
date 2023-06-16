@@ -16,11 +16,11 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect(route('taskshow'));
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    return redirect(route('taskshow'));
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {

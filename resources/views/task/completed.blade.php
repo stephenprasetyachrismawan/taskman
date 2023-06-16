@@ -1,6 +1,6 @@
 @extends('layouts.temp')
 
-@section('title', 'Show Tasks')
+@section('title', 'Show Completed Tasks')
 @section('subtitle', 'List of Your Tasks')
 @section('content')
     <div class="flex items-center justify-center my-7 w-full">
@@ -8,7 +8,7 @@
         <a href="{{ route('taskmake') }}"><button class="btn btn-info text-slate-100">Add Task</button></a>
     </div>
     <div class="flex items-center justify-start my-7 mx-16 w-full">
-        <a href="{{ route('taskstatus', ['status' => 'completed']) }}" class="link link-secondary">Completed Tasks</a>
+
         &nbsp;&nbsp;<a href="{{ route('taskstatus', ['status' => 'incomplete']) }}" class="link link-info">Incomplete
             Tasks</a>
     </div>

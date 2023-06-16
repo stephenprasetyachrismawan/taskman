@@ -50,7 +50,35 @@
 </html>
 <script>
     $(document).ready(function() {
-        $('#example').DataTable();
+        $('#example').DataTable({
+            'autoWidth': true,
+            "columnDefs": [{
+                    "width": "20%",
+                    "targets": 2
+                },
+                {
+                    width: '250px',
+                    targets: 5
+                },
+                {
+                    width: '200px',
+                    targets: 1
+                },
+                {
+                    width: '100px',
+                    targets: 4
+                },
+                {
+                    width: '25px',
+                    targets: 0
+                },
+                {
+                    width: '25px',
+                    targets: 3
+                },
+            ],
+            fixedColumns: true
+        });
     });
     $(document).ready(function() {
         $('.selkat').select2();

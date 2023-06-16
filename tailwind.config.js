@@ -69,7 +69,7 @@ module.exports = {
         ]
     },
     plugins: [
-        require('daisyui'),
+        forms, require('daisyui'),
     ],
     // ...
 }
